@@ -16,10 +16,6 @@ import java.io.PrintWriter;
  */
 public interface AbstractHttpServletRequest {
     /**
-     * 业务线ID
-     */
-    Long BIZ_LINE_ID = 1L;
-    /**
      * ajax 请求头
      */
     String AJAX_HEADER = "X-Requested-With";
