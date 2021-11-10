@@ -8,3 +8,6 @@
 /.idea/
 /poseibon-common/target/
 *.iml
+/logs/
+/**/target/
+*.DS_Store
