@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Collection 工具类
+ * Args2 工具类
  *
  * @author qingchuan
  * @date 2020/12/11
  */
-public interface Args2 {
+public class Args2 {
     /**
      * 解析参数
      *
@@ -18,7 +18,7 @@ public interface Args2 {
      * @param argValues 值对象
      * @return 参数集合
      */
-    default Map<String, Object> parseArgs(String[] argNames, Object[] argValues) throws IllegalAccessException {
+    public static final Map<String, Object> parseArgs(String[] argNames, Object[] argValues) throws IllegalAccessException {
 
         Map<String, Object> argMap = new HashMap<>();
         if (argNames != null && argNames.length > 0) {
@@ -42,7 +42,7 @@ public interface Args2 {
      * @return 属性名称和值键值对map
      * @throws IllegalAccessException
      */
-    default Map<String, Object> parseObj(Object obj) throws IllegalAccessException {
+    public static final Map<String, Object> parseObj(Object obj) throws IllegalAccessException {
         Map<String, Object> retMap = new HashMap<>();
         if (obj == null) {
             return retMap;
