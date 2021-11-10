@@ -25,6 +25,18 @@ public class Maps2 {
     }
 
     /**
+     * Null-safe check if the specified map is empty.
+     * <p>
+     * Null returns true.
+     *
+     * @param map  the map to check, may be null
+     * @return true if empty or null
+     */
+    public static boolean isNotEmpty(final Map<?,?> map) {
+        return !isEmpty(map);
+    }
+
+    /**
      * 根据KEY值升序排序
      *
      * @param <K> key的数据类型
