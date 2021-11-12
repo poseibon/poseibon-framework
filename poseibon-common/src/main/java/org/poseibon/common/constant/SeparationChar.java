@@ -43,4 +43,8 @@ public interface SeparationChar {
      * 下划线
      */
     char UNDERLINE = '_';
+    /**
+     * 点
+     */
+    char DOT = '.';
 }
